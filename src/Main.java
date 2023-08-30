@@ -6,8 +6,8 @@ public class Main {
         //Que nesse exemplo é 3
         Bicicleta bicicleta = Bicicleta.encontrarBicicleta(3);
 
-        //A saída será Monark
-        System.out.println(bicicleta.nome);
+        //A saída será o valor da Monark
+        System.out.println(bicicleta.pegarValor());
     }
 
     public static void dadosIniciais(){

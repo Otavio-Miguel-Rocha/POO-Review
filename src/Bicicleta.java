@@ -26,6 +26,12 @@ public class Bicicleta {
         }
         return null;
     }
+
+
+    //futuro assunto: getter e setters
+    public double pegarValor(){
+        return valor;
+    }
 }
 
 
