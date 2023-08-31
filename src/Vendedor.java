@@ -1,9 +1,9 @@
 public class Vendedor {
-    int id;
-    String nome;
-    double comissao;
+    private int id;
+    private String nome;
+    private double comissao;
 
-    static int contadorId = 1;
+    private static int contadorId = 1;
 
     public Vendedor(String nome){
         this.id = contadorId;
@@ -13,6 +13,26 @@ public class Vendedor {
 
     public void receberComissao(double valorFinal){
         this.comissao += valorFinal * 0.10;
+    }
+
+    public void setNome(String novoNome){
+        this.nome = novoNome;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public double getComissao() {
+        return comissao;
+    }
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
     }
 
     @Override

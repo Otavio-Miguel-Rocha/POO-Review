@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bicicleta {
-    int id;
-    String nome;
-    String descricao;
-    double valor;
-    static List<Bicicleta> listaBicicletas = new ArrayList<>();
-    static int contadorId = 0;
+    private int id;
+    private String nome;
+    private String descricao;
+    private double valor;
+    private static List<Bicicleta> listaBicicletas = new ArrayList<>();
+    private static int contadorId = 0;
 
     public Bicicleta(String nome, String descricao, double valor){
         contadorId++;
@@ -27,12 +27,42 @@ public class Bicicleta {
         return null;
     }
 
+    public String getNome() {
+        return nome;
+    }
 
-    //futuro assunto: getter e setters
-    public double pegarValor(){
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public static List<Bicicleta> getListaBicicletas() {
+        return listaBicicletas;
+    }
+
+    public void removerBicicleta() {
+        listaBicicletas.remove(this);
+    }
+
+    public double getValor(){
         return valor;
     }
+
+
+
 }
+
 
 
 
