@@ -1,13 +1,21 @@
 public class Main {
     public static void main(String[] args) {
         dadosIniciais();
-        //Vamos imaginar que no sistema, estamos pesquisando por uma bike
-        //vamos pesquisar ela pelo código de barra(ID)
-        //Que nesse exemplo é 3
+        //Cria o vendedor
+        Vendedor vendedor = new Vendedor("Marcos");
+
+        //Identifica a bicicleta vendida
         Bicicleta bicicleta = Bicicleta.encontrarBicicleta(3);
 
-        //A saída será o valor da Monark
-        System.out.println(bicicleta.pegarValor());
+        //Estado atual da comissão
+        System.out.println(vendedor.comissao);
+
+        //Executa o método
+        vendedor.receberComissao(bicicleta.valor);
+
+        //Verifica o novo estado, testando e verificando
+        //A funcionalidade da palavra this
+        System.out.println(vendedor.comissao);
     }
 
     public static void dadosIniciais(){
