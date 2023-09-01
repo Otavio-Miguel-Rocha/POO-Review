@@ -11,6 +11,9 @@ public class Main {
 
         Produto produto = Produto.buscarProduto(id);
 
+        produto.aumentarArmazenamento(64);
+        //Cast
+        ((Celular) produto).aumentarArmazenamento(64);
     }
 
     public static void dadosIniciais() {

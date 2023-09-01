@@ -10,6 +10,10 @@ public class Celular extends Produto{
         this.memoriaRam = memoriaRam;
         this.armazenamento = armazenamento;
     }
+
+    public void aumentarArmazenamento(double armazenamento){
+        this.armazenamento += armazenamento;
+    }
 }
 
 
