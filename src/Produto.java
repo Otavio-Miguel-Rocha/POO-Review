@@ -30,6 +30,15 @@ public class Produto {
         return null;
     }
 
+    public static Produto buscarProduto(String nome){
+        for ( Produto produto : listaProdutos) {
+            if(produto.nome.equals(nome)){
+                return produto;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return "id=" + id + "\n" +

@@ -9,13 +9,9 @@ public class Main {
         System.out.println("Insira o ID do produto>: ");
         int id = sc.nextInt();
 
-        Produto produto = Produto.buscarProduto(id);
+        Produto produtoBuscadoPeloId = Produto.buscarProduto(id);
 
-        //instanceOf - valida se o objeto foi instanciado naquela classe
-        if(produto instanceof Bicicleta){
-            //Saída esperada - To String da Bicicleta
-            System.out.println(produto);
-        }
+        Produto produtoBuscadoPeloNome = Produto.buscarProduto("Oggi Hacker Pro Aro 29");
     }
 
     public static void dadosIniciais() {
