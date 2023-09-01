@@ -5,8 +5,10 @@ public class Celular extends Produto{
     private double memoriaRam;
     private double armazenamento;
 
-    public Celular(String nome, String descricao, double valor){
-
+    public Celular(String nome, String descricao, double valor, double memoriaRam, double armazenamento){
+        super(nome, descricao, valor);
+        this.memoriaRam = memoriaRam;
+        this.armazenamento = armazenamento;
     }
 }
 

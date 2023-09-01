@@ -20,5 +20,14 @@ public class Produto {
         this.valor = valor;
         listaProdutos.add(this);
     }
+
+    public static Produto buscarProduto(int id){
+        for ( Produto produto : listaProdutos) {
+            if(produto.id == id){
+                return produto;
+            }
+        }
+        return null;
+    }
 }
 
