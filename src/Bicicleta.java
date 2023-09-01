@@ -12,6 +12,14 @@ public class Bicicleta extends Produto{
         this.tamanhoQuadro = tamanhoQuadro;
     }
 
+    @Override
+    public String toString() {
+        return  "Bicicleta {" + "\n" +
+                super.toString() + "\n" +
+                "tamanhoAro=" + tamanhoAro +
+                ", tamanhoQuadro=" + tamanhoQuadro +
+                '}';
+    }
 }
 
 

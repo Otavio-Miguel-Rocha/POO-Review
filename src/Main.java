@@ -11,9 +11,11 @@ public class Main {
 
         Produto produto = Produto.buscarProduto(id);
 
-        produto.aumentarArmazenamento(64);
-        //Cast
-        ((Celular) produto).aumentarArmazenamento(64);
+        //instanceOf - valida se o objeto foi instanciado naquela classe
+        if(produto instanceof Bicicleta){
+            //Saída esperada - To String da Bicicleta
+            System.out.println(produto);
+        }
     }
 
     public static void dadosIniciais() {

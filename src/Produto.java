@@ -29,5 +29,13 @@ public class Produto {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "id=" + id + "\n" +
+                ", nome='" + nome + "\n" +
+                ", descricao='" + descricao + "\n" +
+                ", valor=" + valor;
+    }
 }
 
