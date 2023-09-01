@@ -11,7 +11,11 @@ public class Main {
 
         Produto produtoBuscadoPeloId = Produto.buscarProduto(id);
 
-        Produto produtoBuscadoPeloNome = Produto.buscarProduto("Oggi Hacker Pro Aro 29");
+        if( produtoBuscadoPeloId instanceof Bicicleta ){
+            System.out.println("Bicicleta");
+        } else {
+            System.out.println("Qualquer outro produto");
+        }
     }
 
     public static void dadosIniciais() {
