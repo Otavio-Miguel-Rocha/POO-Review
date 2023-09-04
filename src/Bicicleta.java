@@ -20,6 +20,12 @@ public class Bicicleta extends Produto{
                 ", tamanhoQuadro=" + tamanhoQuadro +
                 '}';
     }
+
+    @Override
+    public double calcularImposto(double valorAtual) {
+        //Bicicleta - 5,5% de imposto
+        return valorAtual * 1.055;
+    }
 }
 
 

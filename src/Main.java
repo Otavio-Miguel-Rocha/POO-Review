@@ -11,11 +11,6 @@ public class Main {
 
         Produto produtoBuscadoPeloId = Produto.buscarProduto(id);
 
-        if( produtoBuscadoPeloId instanceof Bicicleta ){
-            System.out.println("Bicicleta");
-        } else {
-            System.out.println("Qualquer outro produto");
-        }
     }
 
     public static void dadosIniciais() {

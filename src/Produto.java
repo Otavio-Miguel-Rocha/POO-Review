@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Produto {
+public abstract class Produto {
     private int id;
     private String nome;
     private String descricao;
@@ -38,6 +38,8 @@ public class Produto {
         }
         return null;
     }
+
+    public abstract double calcularImposto(double valorAtual);
 
     @Override
     public String toString() {

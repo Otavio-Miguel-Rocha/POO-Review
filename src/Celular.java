@@ -14,6 +14,12 @@ public class Celular extends Produto{
     public void aumentarArmazenamento(double armazenamento){
         this.armazenamento += armazenamento;
     }
+
+    @Override
+    public double calcularImposto(double valorAtual) {
+        //Celular - 3,5% de imposto
+        return valorAtual * 1.035;
+    }
 }
 
 
